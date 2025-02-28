@@ -1,0 +1,421 @@
+*{
+    list-style: none;
+    cursor: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.toggleBtn{
+    /* margin-top: 10px; */
+    border: 2px solid;
+    border-radius: 10px;
+    border-width: 1px;
+    height: 50px;
+    width: 200px;
+}
+
+.toggleBtn:hover{
+    color: white;
+    background-color: rgb(59, 59,218);
+    transition: 0.7s;
+}
+
+.featuresSection{
+    display: flex;
+    margin-top: 10px;
+}
+
+.feature1{
+    border: 1px solid;
+    border-radius: 10px;
+    height: 30px;
+    margin-left: 45px;
+    width: 150px;
+}
+
+.feature1:hover{
+    background-color: rgb(59, 59, 218);
+    color: white;
+    transition: 0.5s;
+}
+
+.feature2{
+    border: 1px solid;
+    border-radius: 10px;
+    height: 30px;
+    margin-left: 20px;
+    width: 150px;
+}
+
+.feature2:hover{
+    background-color: rgb(59, 59, 218);
+    color: white;
+    transition: 0.5s;
+}
+
+.feature3{
+    border: 1px solid;
+    border-radius: 10px;
+    height: 30px;
+    margin-left: 30px;
+    width: 180px;
+    background-color: rgb(59, 59, 218);
+    color: white;
+}
+
+.feature3:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.feature4{
+    border: 1px solid;
+    border-radius: 10px;
+    height: 30px;
+    margin-left: 30px;
+    width: 220px;
+}
+
+.feature4:hover{
+    background-color: rgb(59, 59, 218);
+    color: white;
+    transition: 0.5s;
+}
+
+.feature5{
+    border: 1px solid;
+    border-radius: 10px;
+    height: 30px;
+    margin-left: 30px;
+    width: 180px;
+}
+
+.feature5:hover{
+    background-color: rgb(59, 59, 218);
+    color: white;
+    transition: 0.5s;
+}
+
+.feature6{
+    border: 1px solid;
+    border-radius: 10px;
+    height: 30px;
+    margin-left: 30px;
+    width: 150px;
+}
+
+.feature6:hover{
+    background-color: rgb(59, 59, 218);
+    color: white;
+    transition: 0.5s;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #222;
+} */
+
+#cCarousel {
+  position: relative;
+  max-width: 950px;
+  margin-top: 100px;
+  margin-left: 140px;
+}
+
+#cCarousel .arrow {
+  position: absolute;
+  top: -10%;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1;
+  font-size: 26px;
+  color: white;
+  background: #00000072;
+  cursor: pointer;
+}
+
+#cCarousel .arrow:hover{
+    background-color: rgb(59, 59, 218);
+    transition: 0.7s;
+}
+
+#cCarousel #prev {
+    left: 870px;
+}
+
+#cCarousel #next {
+  right: 0px;
+}
+
+#carousel-vp {
+  width: 970px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+@media (max-width: 770px) {
+  #carousel-vp {
+    width: 510px;
+  }
+}
+
+@media (max-width: 510px) {
+  #carousel-vp {
+    width: 250px;
+  }
+}
+
+#cCarousel #cCarousel-inner {
+  display: flex;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  gap: 10px;
+  left: 0px;
+}
+
+.cCarousel-item {
+  width: 250px;
+  height: 365px;
+  border: 2px solid white;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cCarousel-item img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 246px;
+  color: white;
+}
+
+.cCarousel-item .infos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  color: black;
+}
+
+.cCarousel-item .infos button {
+  background: #222;
+  padding: 10px 30px;
+  border-radius: 15px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.taskDiv{
+    border: 1px solid white;
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 550px;
+    width: 78%;
+    margin-bottom: 100px;
+    margin-left: 140px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.taskHeading{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.taskBtn{
+    background-color: #222;
+    color: white;
+    height: 35px;
+    width: 90px;
+    border-radius: 10px;
+    margin-left: 500px;
+}
+
+.taskBtn:hover{
+    background-color: white;
+    color: #222;
+    transition: 0.6s;
+}
+
+.category{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 15px;
+    height: 25px;
+    width: 90px;
+    margin-top: 5px;
+    margin-left: 3px;
+    padding-left: 10px;
+    opacity: .7;
+    cursor: pointer;
+    padding-right: -19px;
+}
+
+.rightIcon{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    opacity: .7;
+    float: right;
+    margin-top: -20px;
+    margin-right: 10px;
+}
+
+.container {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+    top: 30px;
+    left: 20px;
+
+    &:nth-of-type(1) {
+      background: url("https://images.pexels.com/photos/1845208/pexels-photo-1845208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("https://images.pexels.com/photos/36469/woman-person-flowers-wreaths.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(5) {
+        background: url("https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+          no-repeat 50% / cover;
+    }
+    &:nth-of-type(6) {
+        background: url("https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+          no-repeat 50% / cover;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      /* transform: translatey(-30px); */
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+.contentBtn{
+    background-color: white;
+    color: #222;
+    height: 35px;
+    width: 180px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.contentBtn:hover{
+    background-color: #222;
+    color: white;
+    transition: 0.7s;
+}
+
+.hireIcon{
+    margin-left: 70px;
+}
