@@ -649,35 +649,74 @@ li{
   color: white;
 }
 
+.infoPara{
+  font-size: 10px;
+  font-weight: lighter;
+}
+
 .stats-container {
-  display: flex;
+  /* display: flex; */
   align-items: center;
+  margin-top: 20px;
   margin-bottom: 16px;
 }
 
 .stat-img {
   border-radius: 8px;
   margin-right: 16px;
-  width: 100px;
+  /* margin-left: 50px; */
+  width: 111px;
+  height: 140px;
+}
+
+.stat-img1 {
+  border-radius: 8px;
+  /* margin-right: 16px; */
+  margin-left: 131px;
+  width: 110px;
   height: 100px;
+}
+
+.stat-mainBox{
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.stat-card1{
+  display: flexbox;
+  margin-top: 30px;
 }
 
 .stat-box {
   background-color: white;
-  padding: 16px;
+  padding: 8px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex: 1;
+  /* flex: 1; */
 }
 
 .stat-box.highlight {
+  /* display: flex; */
   background-color: rgb(59, 59, 218);
   color: white;
+  width: 161px;
+  height: 80px;
+  float: right;
 }
 
 .percentage {
-  font-size: 2rem;
+  font-size: 25px;
   font-weight: bold;
+}
+
+.smilyPhoto{
+  float: right;
+  width: 27px;
+  /* margin-top: 10px; */
+  color: white;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .customer-avatars {
@@ -701,11 +740,16 @@ li{
 }
 
 .link-btn {
-  background: none;
-  border: none;
-  color: #2563eb;
+  background: black;
+  border: 1px solid;
+  border-radius: 15px;
+  height: 25px;
+  width: 80px;
+  color: white;
   cursor: pointer;
-  font-weight: bold;
+  font-size: 12px;
+  float: right;
+  /* margin-right: 20px; */
 }
 
 @media (min-width: 768px) {
