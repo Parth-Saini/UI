@@ -9,11 +9,19 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Swasthi Bharat</title>
 </head>
 
 <body>
     <ul class="icons">
+        <li>
+            <i class="fa-solid fa-circle-left leftArrow" style="color: #3b3bda;"></i>
+        </li>
         <li class="assembly">
             Ashtanga yoga
         </li>
@@ -46,32 +54,46 @@
             ViniYoga
         </li>
         <li>
-            <!-- <FontAwesomeIcon icon={faArrowRight} size="2x" class="rightArrow"/> -->
+            <i class="fa-solid fa-circle-right rightArrow" style="color: #3b3bda;"></i>
         </li>
-        <!-- <li class="filter">
-        <FontAwesomeIcon icon={faFilter} size="2x"/>
-        </li> -->
+        <li class="filter">
+            <i class="fa-solid fa-filter"></i>
+        </li>
         <li class="toggleBtn">
             Display Swasthi currency
-            <!-- <FontAwesomeIcon icon={faToggleOn} size="2x" class="toggler" /> -->
+            <i class="fa-solid fa-toggle-on toggler" style="color: #3b3bda;"></i>
         </li>
     </ul>
     </div>
     <div>
-        <ul class='featuresSection'>
-            <li class='feature1'>For children</li>
-            <li class='feature2'>For Gents</li>
-            <li class='feature3'>For Ladies</li>
-            <li class='feature4'>For pregnant ladies</li>
-            <li class='feature5'>Online</li>
-            <li class='feature6'>Offline</li>
-        </ul>
+        <div class='featuresSection'>
+            <button class='feature feature1'>For children
+                <img src="Images/boy.png" alt="" class="featuresIcon">
+            </button>
+            <button class='feature feature2'>For Gents
+                <img src="Images/man-in-suit-and-tie.png" alt="" class="featuresIcon">
+            </button>
+            <button class='feature feature3'>For Ladies
+                <img src="Images/woman.png" alt="" class="featuresIcon">
+            </button>
+            <button class='feature feature4'>For pregnant ladies
+                <img src="Images/pregnant-woman.png" alt="" class="featuresIcon">
+            </button>
+            <button class='feature feature5'>Online
+                <img src="Images/wireless-symbol.png" alt="" class="featuresIcon">
+            </button>
+            <button class='feature feature6'>Offline
+                <img src="Images/no-wifi.png" alt="" class="featuresIcon">
+            </button>
+            <i class="fa-solid fa-circle-right rightArrow2" style="color: #3b3bda;"></i>
+        </div>
     </div>
+
 
     <section>
         <div id="cCarousel">
-            <div class="arrow" id="prev"><i class="fa-solid fa-chevron-left"></i></div>
-            <div class="arrow" id="next"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="arrow" id="prev"><i class="fa-solid fa-circle-arrow-left"></i></div>
+            <div class="arrow" id="next"><i class="fa-solid fa-circle-arrow-right"></i></div>
 
             <div id="carousel-vp">
                 <div id="cCarousel-inner">
@@ -80,42 +102,54 @@
                         <img src="Images/yoga-3426151_640.jpg" alt="Moon">
                         <div class="infos">
                             Yoga Name
+                            <i class="fa-solid fa-star rating" style="color: #3b3bda;"></i> &nbsp; 3.4
                         </div>
+                        <div class="price"><span class="rate">$10</span> hour</div>
                     </article>
 
                     <article class="cCarousel-item">
                         <img src="Images/yoga 2.jpeg" alt="Moon">
                         <div class="infos">
                             Yoga Name
+                            <i class="fa-solid fa-star rating" style="color: #3b3bda;"></i> &nbsp; 3.4
                         </div>
+                        <div class="price"><span class="rate">$10</span> hour</div>
                     </article>
 
                     <article class="cCarousel-item">
                         <img src="Images/yoga 3.jpeg" alt="Moon">
                         <div class="infos">
                             Yoga Name
+                            <i class="fa-solid fa-star rating" style="color: #3b3bda;"></i> &nbsp; 3.4
                         </div>
+                        <div class="price"><span class="rate">$10</span> hour</div>
                     </article>
 
                     <article class="cCarousel-item">
                         <img src="Images/yoga 4.jpeg" alt="Moon">
                         <div class="infos">
                             Yoga Name
+                            <i class="fa-solid fa-star rating" style="color: #3b3bda;"></i> &nbsp; 3.4
                         </div>
+                        <div class="price"><span class="rate">$10</span> hour</div>
                     </article>
 
                     <article class="cCarousel-item">
                         <img src="Images/Yoga 5.jpeg" alt="Moon">
                         <div class="infos">
                             Yoga Name
+                            <i class="fa-solid fa-star rating" style="color: #3b3bda;"></i> &nbsp; 3.4
                         </div>
+                        <div class="price"><span class="rate">$10</span> hour</div>
                     </article>
 
                     <article class="cCarousel-item">
                         <img src="Images/yoga 6.jpeg" alt="Moon">
                         <div class="infos">
                             Yoga Name
+                            <i class="fa-solid fa-star rating" style="color: #3b3bda;"></i> &nbsp; 3.4
                         </div>
+                        <div class="price"><span class="rate">$10</span> hour</div>
                     </article>
                 </div>
             </div>
@@ -205,8 +239,8 @@
             <button class="projectBtn">Show more</button>
         </p>
         <div id="imageSlider">
-            <div class="navArrow" id="previous"><i class="fa-solid fa-chevron-left"></i></div>
-            <div class="navArrow" id="nextSlide"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="navArrow" id="previous"><i class="fa-solid fa-circle-arrow-left"></i></div>
+            <div class="navArrow" id="nextSlide"><i class="fa-solid fa-circle-arrow-right"></i></div>
 
             <div id="sliderViewport">
                 <div id="sliderContent">
@@ -320,14 +354,11 @@
     </section>
 
     <div class="main-container">
-        <!-- Hero Section -->
-        <div class="hero-section">
-            <h1>Your satisfaction, guaranteed, as a
+
+        <!-- <div class="hero-section">
+            <h1>Your satisfaction, guaranteed, as a (
                 <span class="customer-avatars">
-                    <!-- <img src="customer1.jpg" alt="Happy customer 1" class="avatar">
-                    <img src="customer2.jpg" alt="Happy customer 2" class="avatar">
-                    <img src="customer3.jpg" alt="Happy customer 3" class="avatar"> -->
-                </span> customer!
+                </span>) customer!
             </h1>
             <p>Discover the thrill of innovation with us. Unleash your potential today!</p>
             <div class="benefits-list">
@@ -356,7 +387,7 @@
             <button class="primary-btn">Join Now</button>
         </div>
 
-        <!-- Info Section -->
+
         <div class="info-section">
             <h1>Even superheroes need help!</h1>
             <p class="infoPara">You focus on the project goals when <br> we find you proper taskers.</p>
@@ -386,7 +417,7 @@
             </div>
             <button class="primary-btn">Start your own project</button>
         </div>
-    </div>
+    </div> -->
 
     <script src="ui.js"></script>
 </body>
